@@ -18,6 +18,10 @@ def main():
     print("Lisätään 50.7")
     mehua.lisaa_varastoon(50.7)
     print(f"Mehuvarasto: {mehua}")
+
+    printtaa_toka(mehua, olutta)
+
+def printtaa_toka(mehua, olutta):
     print("Otetaan 3.14")
     mehua.ota_varastosta(3.14)
     print(f"Mehuvarasto: {mehua}")
@@ -34,6 +38,10 @@ def main():
     print(f"Olutvarasto: {olutta}")
     print("olutta.lisaa_varastoon(1000.0)")
     olutta.lisaa_varastoon(1000.0)
+
+    printtaa_kolmas(mehua, olutta)
+
+def printtaa_kolmas(mehua, olutta):
     print(f"Olutvarasto: {olutta}")
 
     print(f"Mehuvarasto: {mehua}")
@@ -49,10 +57,13 @@ def main():
 
     print(f"Mehuvarasto: {mehua}")
     print("mehua.otaVarastosta(-32.9)")
+
+    printtaa_vika(mehua)
+
+def printtaa_vika(mehua):
     saatiin = mehua.ota_varastosta(-32.9)
     print(f"saatiin {saatiin}")
     print(f"Mehuvarasto: {mehua}")
-
 
 if __name__ == "__main__":
     main()
